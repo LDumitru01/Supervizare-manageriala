@@ -1,32 +1,41 @@
-<section id="cum-te-convingi"
-         class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
-    <div class="section-inner">
+<section id="cum-te-convingi" class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-3xl sm:text-4xl font-bold text-accent text-center mb-12 tracking-tight uppercase">
+        CUM TE CONVINGI
+    </h2>
 
-        <h2 class="text-2xl lg:text-4xl font-semibold text-accent
-                   px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
-            Cum te convingi
-        </h2>
+    <div class="space-y-8">
 
-        <ol class="mt-4 space-y-3 text-sm sm:text-base text-white list-decimal list-inside">
-            <li>
-                <h4 class="font-semibold text-accent">Programează o sesiune exploratorie gratuită.</h4>
-                <p>În 60 de minute vezi exact cum funcționează procesul și ce beneficii îți poate aduce.</p>
-            </li>
+        <!-- Pasul 1 -->
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition">
+            <div class="text-accent text-3xl font-extrabold w-10 text-center">1</div>
+            <div>
+                <p class="text-accent font-semibold text-lg">Programează o sesiune exploratorie gratuită.</p>
+                <p class="text-white/70 mt-1">În 60 de minute vezi exact cum funcționează procesul și ce beneficii îți poate aduce.</p>
+            </div>
+        </div>
 
-            <li>
-                <h4 class="font-semibold text-accent">Primești o evaluare reflexivă personalizată.</h4>
-                <p>Vei pleca cu claritate chiar și după prima întâlnire.</p>
-            </li>
+        <!-- Pasul 2 -->
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition">
+            <div class="text-accent text-3xl font-extrabold w-10 text-center">2</div>
+            <div>
+                <p class="text-accent font-semibold text-lg">Primești o evaluare reflexivă personalizată.</p>
+                <p class="text-white/70 mt-1">Vei pleca cu claritate chiar și după prima întâlnire.</p>
+            </div>
+        </div>
 
-            <li>
-                <h4 class="font-semibold text-accent">Alegi formatul potrivit ție.</h4>
-                <p>Individual, sau cu echipa ta.</p>
-            </li>
-        </ol>
-
-        <p class="mt-4 italic text-white">
-            Este o invitație la curajul de a te opri — și de a te privi pe tine însuți în acțiune.
-        </p>
+        <!-- Pasul 3 -->
+        <div class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition">
+            <div class="text-accent text-3xl font-extrabold w-10 text-center">3</div>
+            <div>
+                <p class="text-accent font-semibold text-lg">Alegi formatul potrivit ție.</p>
+                <p class="text-white/70 mt-1">Individual, sau cu echipa ta.</p>
+            </div>
+        </div>
 
     </div>
+
+    <!-- Citat final -->
+    <p class="text-center italic text-white/80 mt-10 text-lg">
+        Este o invitație la curajul de a te opri — și de a te privi pe tine însuți în acțiune.
+    </p>
 </section>

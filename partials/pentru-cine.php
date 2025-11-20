@@ -1,31 +1,75 @@
-<section id="pentru-cine"
-         class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+<!-- SECȚIUNEA 3 — De ce pentru manageri și lideri -->
+<section id="pentru-cine" class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
     <div class="section-inner">
 
-        <h2 class="text-2xl lg:text-4xl font-semibold text-accent
-                   px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
-            De ce pentru manageri și lideri
-        </h2>
+        <div class="section-inner">
 
-        <p class="mt-4 text-sm sm:text-base text-white">
-            Ca manager, nu mai poți delega reflecția. Supervizarea este spațiul în care îți recâștigi claritatea,
-            îți calibrezi gândirea strategică și îți dezvolți capacitatea de a crea soluții împreună cu echipa.
-        </p>
-
-        <div class="mt-6 grid gap-4 md:grid-cols-2">
-
-            <ul class="space-y-2 text-sm sm:text-base text-white list-disc list-inside">
-                <li>își reduc semnificativ riscul de epuizare decizională;</li>
-                <li>cresc gradul de autonomie și performanță al echipei;</li>
-                <li>devin modele de leadership reflexiv și creativ;</li>
-                <li>reușesc să transforme dificultățile în inovație.</li>
-            </ul>
-
-            <div class="border-l-4 border-accent pl-4 italic text-white">
-                Nu ai nevoie de cineva care să-ți spună ce să faci.<br>
-                Ai nevoie de cineva care să te ajute să vezi ce nu vezi încă.
+            <!-- BADGE SUS -->
+            <div class="flex justify-center">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                             bg-accent/10 border border-accent/30 text-xs font-semibold
+                             tracking-[0.2em] uppercase text-accent">
+                    Pentru manageri și lideri
+                </span>
             </div>
 
+            <!-- TITLU -->
+            <h2 class="mt-4 text-2xl lg:text-4xl font-semibold text-accent text-center tracking-tight">
+                De ce pentru manageri și lideri
+            </h2>
+
+            <div class="mt-4 h-px w-24 mx-auto bg-gradient-to-r from-transparent via-accent/60 to-transparent"></div>
+
+            <!-- TEXT INTRODUCTIV -->
+            <p class="mt-8 text-sm sm:text-base text-white/90 leading-relaxed text-center lg:text-left">
+                Ca manager, nu mai poți delega reflecția. Supervizarea este spațiul în care îți recâștigi claritatea,
+                îți calibrezi gândirea strategică și îți dezvolți capacitatea de a crea soluții împreună cu echipa.
+            </p>
+
+            <!-- GRID: BENEFICII + CITAT -->
+            <div class="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
+
+                <!-- STÂNGA: LISTĂ BENEFICII -->
+                <div class="space-y-4 text-sm sm:text-base text-white/90 leading-relaxed">
+
+                    <h3 class="font-semibold text-accent text-base sm:text-lg">
+                        Managerii care intră în supervizare:
+                    </h3>
+
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+                            <span>își reduc semnificativ riscul de epuizare decizională;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+                            <span>cresc gradul de autonomie și performanță al echipei;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+                            <span>devin modele de leadership reflexiv și creativ;</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 h-2 w-2 rounded-full bg-accent"></span>
+                            <span>reușesc să transforme dificultățile în inovație.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DREAPTA: CITAT EVIDENȚIAT -->
+                <div class="relative">
+                    <div class="rounded-3xl border border-accent/40 bg-accent/5 px-6 py-6 sm:px-8 sm:py-8
+                                text-sm sm:text-base text-white/90 italic shadow-lg">
+                        <div class="mb-3 text-accent text-4xl leading-none">“</div>
+                        <p>
+                            Nu ai nevoie de cineva care să-ți spună ce să faci.
+                            <br />
+                            Ai nevoie de cineva care să te ajute să vezi ce nu vezi încă.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
