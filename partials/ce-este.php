@@ -56,18 +56,18 @@
                     </h3>
 
                     <!-- Nivel 1 -->
-                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start">
+                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start hover:bg-white/10 transition">
                         <div class="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-accent font-semibold text-sm">
                             1
                         </div>
-                        <p class="text-white/90 text-sm sm:text-base">
-                            <span class="font-semibold text-accent">Reflecția asupra practicii</span> – înțelegi ce se întâmplă cu tine,
+                        <p class="text-white/90 text-sm sm:text-base ">
+                            <span class="font-semibold text-accent ">Reflecția asupra practicii</span> – înțelegi ce se întâmplă cu tine,
                             echipa, deciziile.
                         </p>
                     </div>
 
                     <!-- Nivel 2 -->
-                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start">
+                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start hover:bg-white/10 transition">
                         <div class="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-accent font-semibold text-sm">
                             2
                         </div>
@@ -78,7 +78,7 @@
                     </div>
 
                     <!-- Nivel 3 -->
-                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start">
+                    <div class="flex gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 items-start hover:bg-white/10 transition">
                         <div class="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-accent font-semibold text-sm">
                             3
                         </div>

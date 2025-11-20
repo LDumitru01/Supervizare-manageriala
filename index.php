@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" class="scroll-smooth">
 <?php include __DIR__ . '/partials/head.php'; ?>
 
 <body class="min-h-screen text-gray-100 bg-gradient-to-b from-[#020617] via-[#07152c] to-[#020617]">

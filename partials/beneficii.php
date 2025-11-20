@@ -24,7 +24,7 @@
             <div class="mt-8 grid gap-5 md:grid-cols-2 text-sm sm:text-base">
 
                 <!-- CARD 1 -->
-                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 hover:bg-white/10 transition" >
                     <div class="mt-1 h-8 w-8 rounded-full bg-accent/15 flex items-center justify-center text-accent text-lg">
                         ✔
                     </div>
@@ -39,7 +39,7 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 hover:bg-white/10 transition">
                     <div class="mt-1 h-8 w-8 rounded-full bg-accent/15 flex items-center justify-center text-accent text-lg">
                         ✔
                     </div>
@@ -54,7 +54,7 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 hover:bg-white/10 transition">
                     <div class="mt-1 h-8 w-8 rounded-full bg-accent/15 flex items-center justify-center text-accent text-lg">
                         ✔
                     </div>
@@ -69,7 +69,7 @@
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 hover:bg-white/10 transition">
                     <div class="mt-1 h-8 w-8 rounded-full bg-accent/15 flex items-center justify-center text-accent text-lg">
                         ✔
                     </div>
@@ -84,7 +84,7 @@
                 </div>
 
                 <!-- CARD 5 (pe un rând singur dacă e nevoie) -->
-                <div class="md:col-span-2 flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                <div class="md:col-span-2 flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 hover:bg-white/10 transition">
                     <div class="mt-1 h-8 w-8 rounded-full bg-accent/15 flex items-center justify-center text-accent text-lg">
                         ✔
                     </div>

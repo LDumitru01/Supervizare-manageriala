@@ -1,4 +1,4 @@
-<section class="relative overflow-hidden text-white bg-gradient-to-b from-[#020617] via-[#07152c] to-[#020617] pb-24 lg:pb-32">
+<section class="relative overflow-hidden text-white panel-section pb-24 lg:pb-32">
     <div class="section-inner pt-5 lg:pt-8 min-h-[80vh] flex flex-col">
 
         <!-- NAV SUS -->
@@ -9,11 +9,11 @@
 
             <!-- NAV DESKTOP -->
             <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
-                <a href="#de-ce-acum" class="hover:text-accent">De ce acum</a>
-                <a href="#ce-este" class="hover:text-accent">Ce este</a>
-                <a href="#pentru-cine" class="hover:text-accent">Pentru manageri</a>
-                <a href="#beneficii" class="hover:text-accent">Ce primești</a>
-                <a href="#testimoniale" class="hover:text-accent">Testimoniale</a>
+                <a href="#de-ce-acum" class="hover:text-accent">De ce acum?</a>
+                <a href="#ce-este" class="hover:text-accent">Ce este?</a>
+                <a href="#pentru-cine" class="hover:text-accent">Pentru manageri?</a>
+                <a href="#beneficii" class="hover:text-accent">Ce primești?</a>
+                <a href="#testimoniale" class="hover:text-accent">Testimoniale?</a>
             </nav>
 
             <!-- CONTACT DESKTOP -->

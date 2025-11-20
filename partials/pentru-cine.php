@@ -60,7 +60,6 @@
                 <div class="relative">
                     <div class="rounded-3xl border border-accent/40 bg-accent/5 px-6 py-6 sm:px-8 sm:py-8
                                 text-sm sm:text-base text-white/90 italic shadow-lg">
-                        <div class="mb-3 text-accent text-4xl leading-none">“</div>
                         <p>
                             Nu ai nevoie de cineva care să-ți spună ce să faci.
                             <br />
