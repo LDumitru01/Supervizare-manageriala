@@ -1,6 +1,7 @@
 <section id="cum-te-convingi" class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-3xl sm:text-4xl font-bold text-accent text-center mb-12 tracking-tight uppercase">
-        CUM TE CONVINGI
+    <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+           text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
+        Cum te convingi
     </h2>
 
     <div class="space-y-8">

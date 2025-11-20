@@ -3,7 +3,8 @@
     <div class="section-inner">
 
         <!-- TITLU + SUBTITLU -->
-        <h2 class="text-2xl sm:text-4xl font-bold text-accent text-center tracking-tight uppercase">
+        <h2 class=" text-center text-accent font-extrabold tracking-tight 
+           text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)] uppercase">
             Programează o sesiune exploratorie gratuită
         </h2>
         <p class="mt-4 text-center text-sm sm:text-base text-white/80 max-w-2xl mx-auto">

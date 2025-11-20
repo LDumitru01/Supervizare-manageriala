@@ -3,14 +3,14 @@
 
        
        <!-- COLUMNA STÂNGĂ – CARDURI SITUAȚII -->
-<div class="sspace-y-6 h-full flex flex-col justify-between">
+<div class="space-y-6 h-full flex flex-col justify-between">
 
     <!-- CARD GENERIC – 1 -->
     <div
         class="relative overflow-hidden rounded-3xl border border-white/10
                bg-gradient-to-r from-white/10 via-white/5 to-white/0
                backdrop-blur-xl px-6 py-5 flex items-center gap-4
-               shadow-xl">
+               shadow-xl hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
 
         <!-- decor soft în colț -->
         <div class="pointer-events-none absolute -right-10 -bottom-10
@@ -33,7 +33,7 @@
         class="relative overflow-hidden rounded-3xl border border-white/10
                bg-gradient-to-r from-white/10 via-white/5 to-white/0
                backdrop-blur-xl px-6 py-5 flex items-center gap-4
-               shadow-xl">
+               shadow-xl hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
 
         <div class="pointer-events-none absolute -right-10 -bottom-10
                     h-24 w-24 rounded-full bg-accent/15 blur-2xl"></div>
@@ -53,7 +53,7 @@
         class="relative overflow-hidden rounded-3xl border border-white/10
                bg-gradient-to-r from-white/10 via-white/5 to-white/0
                backdrop-blur-xl px-6 py-5 flex items-center gap-4
-               shadow-xl">
+               shadow-xl hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
 
         <div class="pointer-events-none absolute -right-10 -bottom-10
                     h-24 w-24 rounded-full bg-accent/15 blur-2xl"></div>
@@ -72,7 +72,7 @@
         class="relative overflow-hidden rounded-3xl border border-white/10
                bg-gradient-to-r from-white/10 via-white/5 to-white/0
                backdrop-blur-xl px-6 py-5 flex items-center gap-4
-               shadow-xl">
+               shadow-xl hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
 
         <!-- decor soft în colț -->
         <div class="pointer-events-none absolute -right-10 -bottom-10

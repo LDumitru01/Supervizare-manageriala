@@ -14,11 +14,10 @@
             </div>
 
             <!-- TITLU -->
-            <h2 class="mt-4 text-2xl lg:text-4xl font-semibold text-accent text-center tracking-tight">
+            <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+                        text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
                 De ce pentru manageri și lideri
             </h2>
-
-            <div class="mt-4 h-px w-24 mx-auto bg-gradient-to-r from-transparent via-accent/60 to-transparent"></div>
 
             <!-- TEXT INTRODUCTIV -->
             <p class="mt-8 text-sm sm:text-base text-white/90 leading-relaxed text-center lg:text-left">
