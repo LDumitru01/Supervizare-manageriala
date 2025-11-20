@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supervizare Managerială</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Config culori custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0b1b3b",   // bleumarin
+                        accent:  "#22c5ac",   // verde-turcoaz
+                        pearl:   "#f5f5f7"    // gri foarte deschis
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* MODIFICAT: lăsăm doar layout-ul, fără background separat,
+           ca să se vadă gradientul global de pe <body> */
+        .panel-section {
+            background: transparent;
+            width: 100%;
+        }
+
+        /* Container comun pentru lățime maximă și aliniere */
+        .section-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body class="min-h-screen text-gray-100 bg-gradient-to-b from-[#020617] via-[#07152c] to-[#020617]">
+
+    <!-- HERO + NAV + BACKGROUND GRADIENT -->
+    <section class="relative overflow-hidden text-white bg-gradient-to-b from-[#020617] via-[#07152c] to-[#020617] pb-24 lg:pb-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 lg:pt-8 min-h-[80vh] flex flex-col">
+           <!-- NAV SUS (logo + meniu + contact) -->
+<header class="flex items-center justify-between gap-4">
+    <!-- STÂNGA: logo / text -->
+    <div class="flex items-center gap-2">
+    
+    </div>
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
+        <a href="#de-ce-acum" class="hover:text-accent">De ce acum?</a>
+        <a href="#ce-este" class="hover:text-accent">Ce este?</a>
+        <a href="#pentru-cine" class="hover:text-accent">Pentru manageri?</a>
+        <a href="#beneficii" class="hover:text-accent">Ce primești?</a>
+        <a href="#testimoniale" class="hover:text-accent">Testimoniale</a>
+    </nav>
+
+    <!-- CONTACT DESKTOP -->
+    <div class="hidden sm:flex items-center gap-4 text-sm">
+        <a href="mailto:grigore.barladean@gmail.com" class="text-white/80 hover:text-accent">
+            grigore.barladean@gmail.com
+        </a>
+        <a href="tel:069459962"
+           class="px-4 py-2 rounded-full border border-accent text-accent hover:bg-accent hover:text-primary transition text-xs sm:text-sm font-semibold">
+            069 459 962
+        </a>
+    </div>
+
+    <!-- BUTON MOBIL (săgeată) -->
+    <button id="mobile-menu-toggle"
+            class="md:hidden inline-flex items-center justify-center px-3 py-2 rounded-full border border-accent/60 text-accent text-sm">
+        <span class="mr-1 text-xs">Meniu</span>
+        <span id="mobile-menu-icon" class="text-lg leading-none transition-transform duration-200">
+            ▼
+        </span>
+    </button>
+</header>
+
+<!-- MENIU MOBIL (ascuns inițial) -->
+<div id="mobile-menu" class="md:hidden mt-4 space-y-4 text-sm text-white/90 hidden">
+    <nav class="flex flex-col gap-2">
+        <a href="#de-ce-acum" class="hover:text-accent">De ce acum?</a>
+        <a href="#ce-este" class="hover:text-accent">Ce este?</a>
+        <a href="#pentru-cine" class="hover:text-accent">Pentru manageri</a>
+        <a href="#beneficii" class="hover:text-accent">Ce primești?</a>
+        <a href="#testimoniale" class="hover:text-accent">Testimoniale</a>
+    </nav>
+
+    <div class="pt-2 border-t border-white/10 flex flex-col gap-2">
+        <a href="mailto:grigore.barladean@gmail.com" class="text-white/80 hover:text-accent">
+            grigore.barladean@gmail.com
+        </a>
+        <a href="tel:069459962"
+           class="inline-flex items-center justify-center px-4 py-2 rounded-full border border-accent text-accent hover:bg-accent hover:text-primary transition text-sm font-semibold w-full">
+            069 459 962
+        </a>
+    </div>
+</div>
+            <!-- CONȚINUT HERO -->
+            <div class="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-16">
+
+    <!-- STÂNGA -->
+    <div class="space-y-8">
+
+    <!-- LOGO MARE, PRINCIPAL -->
+    <div class="inline-flex items-center px-6 py-3 rounded-full 
+                bg-accent/15 border border-accent/30 
+                text-accent font-extrabold text-3xl sm:text-4xl tracking-wide shadow-md">
+        Supervizare Managerială
+    </div>
+
+    <!-- TITLU MULT MAI MIC -->
+    <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug text-white max-w-xl">
+        Dezvoltă-ți excelența profesională prin supervizare — un proces reflexiv care clarifică direcția
+        și întărește leadershipul.
+    </h1>
+
+    <!-- SUBTITLU (opțional, scurt și profesional) -->
+    <p class="text-base sm:text-lg text-white/80 max-w-md leading-relaxed">
+        Creează spațiu pentru claritate, creștere și decizii asumate.
+    </p>
+
+    <!-- BUTOANE (mai mici și mai elegante) -->
+    <div class="flex flex-wrap gap-4 pt-2">
+
+        <a href="#formular"
+           class="px-5 py-2.5 rounded-full bg-accent text-primary text-sm font-semibold
+                  shadow hover:bg-teal-400 transition">
+            Programează o sesiune gratuită
+        </a>
+
+        <a href="#de-ce-acum"
+           class="px-5 py-2.5 rounded-full border border-white/20 text-white text-sm font-medium
+                  backdrop-blur-md hover:bg-white/10 transition">
+            De ce supervizare?
+        </a>
+    </div>
+
+</div>
+    <!-- DREAPTA: placeholder pentru imagine -->
+    <div class="w-full h-[300px] lg:h-[360px] rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md
+                flex items-center justify-center text-gray-400 text-sm italic">
+        Aici vei adăuga imaginea ta (portret / ilustrație).
+    </div>
+
+    </div>
+        </div>
+    </section>
+
+    <!-- SECȚIUNE CARDURI + INVESTIȚIE (aliniată cu section-inner) -->
+    <section class="panel-section py-16 px-4 sm:px-6 lg:px-8">
+        <div class="section-inner grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+            <!-- ========================= -->
+            <!--     COLUMNA STÂNGĂ       -->
+            <!-- ========================= -->
+            <div class="space-y-6">
+
+                <!-- CARD 1 -->
+                <div class="rounded-3xl p-6 bg-gradient-to-br from-white/10 via-white/5 to-white/10
+                            border border-white/10 backdrop-blur-xl flex items-start gap-4 shadow-md">
+                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xl">
+                        ★
+                    </div>
+                    <p class="text-white/90">
+                        Simți presiunea emoțiilor echipei și ai nevoie de claritate în decizii.
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="rounded-3xl p-6 bg-gradient-to-br from-white/10 via-white/5 to-white/10
+                            border border-white/10 backdrop-blur-xl flex items-start gap-4 shadow-md">
+                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xl">
+                        ★
+                    </div>
+                    <p class="text-white/90">
+                        Ai dileme profesionale sau etice și cauți un cadru sigur pentru reflecție.
+                    </p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="rounded-3xl p-6 bg-gradient-to-br from-white/10 via-white/5 to-white/10
+                            border border-white/10 backdrop-blur-xl flex items-start gap-4 shadow-md">
+                    <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xl">
+                        ★
+                    </div>
+                    <p class="text-white/90">
+                        Îți dorești direcție, claritate și o perspectivă profesionistă asupra provocărilor tale.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ========================= -->
+            <!--     COLUMNA DREAPTĂ      -->
+            <!-- ========================= -->
+            <div>
+                <div class="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 border border-gray-200">
+
+                    <h2 class="text-2xl font-semibold text-primary">
+                        Investiția ta în supervizare
+                    </h2>
+
+                    <p class="mt-4">
+                        Cu o investiție de <span class="font-semibold text-primary">1.160 lei</span> pentru o ședință individuală de o oră,
+                        desfășurată direct în biroul tău (online/offline), poți preveni burnout-ul profesional și îți poți consolida starea de bine.
+                    </p>
+
+                    <p class="mt-3">
+                        Beneficiile se vor reflecta nu doar asupra ta, ci și asupra echipei și clienților tăi.
+                    </p>
+
+                    <div class="mt-6 text-sm text-gray-600 space-y-1">
+                        <p><span class="font-semibold text-primary">Durată tipică:</span> permanent, poți întrerupe contractul în orice moment.</p>
+                        <p><span class="font-semibold text-primary">Format:</span> online / hibrid / față-în-față.</p>
+                    </div>
+
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="#formular"
+                        class="flex-1 inline-flex items-center justify-center px-4 py-3 rounded-full text-sm font-semibold bg-primary text-white hover:bg-accent transition">
+                            Sesiune exploratorie gratuită
+                        </a>
+                        <a href="mailto:grigore.barladean@gmail.com"
+                        class="inline-flex items-center justify-center px-4 py-3 rounded-full text-sm font-medium border border-primary text-primary hover:bg-primary hover:text-white transition">
+                            Scrie-mi pe email
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- CONȚINUT PAGINĂ -->
+   <main class="relative z-10">
+        
+        <!-- SECȚIUNEA 1 — De ce supervizare acum (ALINIATĂ CU section-inner) -->
+        <section id="de-ce-acum" class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+
+                <!-- BADGE MIC DE CONTEXT -->
+                <div class="flex justify-center">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                                bg-accent/10 border border-accent/30 text-xs font-semibold
+                                tracking-[0.2em] uppercase text-accent">
+                        De ce acum
+                    </span>
+                </div>
+
+                <!-- TITLU MODERN -->
+                <h2 class="mt-4 text-2xl lg:text-4xl font-semibold text-accent text-center tracking-tight">
+                    De ce supervizare acum
+                </h2>
+
+                <!-- LINIE SUBȚIRE ELEGANTĂ -->
+                <div class="mt-4 h-px w-24 mx-auto bg-gradient-to-r from-transparent via-accent/60 to-transparent"></div>
+
+                <!-- TEXT PRINCIPAL ÎN GRID (MAI AERISIT) -->
+                <div class="mt-12 grid gap-10 lg:grid-cols-2 items-stretch">
+
+    <!-- CARD 1 -->
+    <article
+        class="group rounded-3xl p-7
+               bg-gradient-to-br from-white/10 via-white/5 to-white/10
+               border border-white/10 backdrop-blur-xl
+               shadow-2xl flex gap-4
+               transition-transform transition-shadow duration-300
+               hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
+
+        <div class="w-11 h-11 flex items-center justify-center
+                    rounded-2xl bg-accent/20 text-accent text-2xl">
+            ★
+        </div>
+
+        <div class="space-y-2">
+            <h3 class="text-sm font-semibold tracking-[0.18em] uppercase text-accent">
+                Contextul actual
+            </h3>
+            <p class="text-sm sm:text-base text-white/90 leading-relaxed">
+                Trăim într-un context în care complexitatea nu mai permite rețete universale.
+                Supervizarea aduce spațiu pentru reflecție, nu pentru soluții rapide.
+            </p>
+        </div>
+    </article>
+
+    <!-- CARD 2 -->
+    <article
+        class="group rounded-3xl p-7
+               bg-gradient-to-br from-white/10 via-white/5 to-white/10
+               border border-white/10 backdrop-blur-xl
+               shadow-2xl flex gap-4
+               transition-transform transition-shadow duration-300
+               hover:-translate-y-1 hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
+
+        <div class="w-11 h-11 flex items-center justify-center
+                    rounded-2xl bg-accent/20 text-accent text-2xl">
+            ✧
+        </div>
+
+        <div class="space-y-2">
+            <h3 class="text-sm font-semibold tracking-[0.18em] uppercase text-accent">
+                Rolul supervizării
+            </h3>
+            <p class="text-sm sm:text-base text-white/90 leading-relaxed">
+                Managerii, liderii, profesioniștii cu experiență au nevoie de un cadru reflexiv,
+                nu de soluții gata făcute.
+            </p>
+            <p class="text-sm sm:text-base text-white/90 leading-relaxed">
+                Supervizarea nu e un lux, ci un instrument de leadership conștient,
+                de recalibrare a direcției și de creștere personală în acțiune.
+            </p>
+        </div>
+    </article>
+
+</div>
+
+                <!-- CITATELE DE JOS, MAI MODERNE -->
+    <div class="mt-14 grid gap-8 sm:grid-cols-2">
+
+    <!-- Citat 1 -->
+    <div class="group rounded-2xl p-5
+                bg-white/5 border border-white/5 backdrop-blur-md
+                shadow-md flex gap-5 items-center
+                transition duration-300 hover:-translate-y-0.5 hover:shadow-lg">
+
+        <!-- Icon cerc subțire -->
+        <div class="w-9 h-9 flex items-center justify-center
+                    rounded-full border border-accent/40 text-accent text-lg">
+            ✦
+        </div>
+
+        <!-- Text -->
+        <p class="italic text-white/80 text-sm leading-relaxed tracking-wide">
+            „Ceea ce nu reflectezi, repeți.”
+        </p>
+    </div>
+
+    <!-- Citat 2 -->
+    <div class="group rounded-2xl p-5
+                bg-white/5 border border-white/5 backdrop-blur-md
+                shadow-md flex gap-5 items-center
+                transition duration-300 hover:-translate-y-0.5 hover:shadow-lg">
+
+        <!-- Icon cerc subțire -->
+        <div class="w-9 h-9 flex items-center justify-center
+                    rounded-full border border-accent/40 text-accent text-lg">
+            ✦
+        </div>
+
+        <!-- Text -->
+        <p class="italic text-white/80 text-sm leading-relaxed tracking-wide">
+            „Ceea ce clarifici, transformi.”
+        </p>
+    </div>
+
+</div>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 2 — Ce este supervizarea integrativă -->
+        <section id="ce-este"
+                 class=" panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl lg:text-4xl font-semibold text-accent
+                       px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
+                Ce este supervizarea integrativă
+            </h2>
+            <p class="mt-4 text-sm sm:text-base text-white">
+                Supervizarea integrativă este un proces de învățare reflexivă ghidat de un facilitator — în care aduci propriile dileme, provocări
+                și decizii, iar prin dialog ghidat, observație și integrare, ajungi să creezi soluții care îți aparțin.
+            </p>
+
+            <div class="mt-4 space-y-1 text-sm sm:text-base font-medium text-accent">
+                <p>Nu este mentoring.</p>
+                <p>Nu este coaching.</p>
+                <p>Este un spațiu de claritate, integrare și acțiune asumată.</p>
+            </div>
+
+            <h3 class="mt-6 text-lg sm:text-xl font-semibold text-accent">
+                În acest proces, lucrăm simultan pe trei niveluri:
+            </h3>
+            <ol class="mt-4 space-y-2 text-sm sm:text-base text-white list-decimal list-inside">
+                <li><span class="font-semibold text-accent">Reflecția asupra practicii</span> – înțelegi ce se întâmplă cu tine, echipa, deciziile.</li>
+                <li><span class="font-semibold text-accent">Crearea de soluții</span> – identificăm căi inovatoare, sustenabile și potrivite contextului.</li>
+                <li><span class="font-semibold text-accent">Dezvoltarea autonomiei</span> – înveți cum să devii propriul tău facilitator de schimbare.</li>
+            </ol>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 3 — De ce pentru manageri și lideri -->
+        <section id="pentru-cine"
+                 class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl lg:text-4xl font-semibold text-accent
+                       px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
+                De ce pentru manageri și lideri
+            </h2>
+            <p class="mt-4 text-sm sm:text-base text-white">
+                Ca manager, nu mai poți delega reflecția. Supervizarea este spațiul în care îți recâștigi claritatea,
+                îți calibrezi gândirea strategică și îți dezvolți capacitatea de a crea soluții împreună cu echipa.
+            </p>
+
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <ul class="space-y-2 text-sm sm:text-base text-white list-disc list-inside">
+                    <li>își reduc semnificativ riscul de epuizare decizională;</li>
+                    <li>cresc gradul de autonomie și performanță al echipei;</li>
+                    <li>devin modele de leadership reflexiv și creativ;</li>
+                    <li>reușesc să transforme dificultățile în inovație.</li>
+                </ul>
+                <div class="border-l-4 border-accent pl-4 italic text-white">
+                    Nu ai nevoie de cineva care să-ți spună ce să faci.<br>
+                    Ai nevoie de cineva care să te ajute să vezi ce nu vezi încă.
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 4 — Ce primești concret -->
+        <section id="beneficii"
+                 class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-accent">
+                Ce primești concret
+            </h2>
+            <ul class="mt-4 space-y-2 text-sm sm:text-base text-white list-disc list-inside">
+                <li>Sesiuni individuale de supervizare integrativă – focalizate pe clarificare, decizie și implementare;</li>
+                <li>Spațiu semi-structurat de reflecție și creație – o combinație între rigoare și libertate;</li>
+                <li>Instrumente de autoanaliză și feedback 360°;</li>
+                <li>Integrare practică – traducem reflecția în pași concreți, măsurabili;</li>
+                <li>Confidențialitate totală și cadru sigur, unde poți aduce orice provocare profesională.</li>
+            </ul>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 5 — Cum te convingi -->
+        <section id="cum-te-convingi"
+                 class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl lg:text-4xl font-semibold text-accent
+                       px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
+                Cum te convingi
+            </h2>
+            <ol class="mt-4 space-y-3 text-sm sm:text-base text-white list-decimal list-inside">
+                <li>
+                    <h4 class="font-semibold text-accent">Programează o sesiune exploratorie gratuită.</h4>
+                    <p>În 60 de minute vezi exact cum funcționează procesul și ce beneficii îți poate aduce.</p>
+                </li>
+                <li>
+                    <h4 class="font-semibold text-accent">Primești o evaluare reflexivă personalizată.</h4>
+                    <p>Vei pleca cu claritate chiar și după prima întâlnire.</p>
+                </li>
+                <li>
+                    <h4 class="font-semibold text-accent">Alegi formatul potrivit ție.</h4>
+                    <p>Individual, sau cu echipa ta.</p>
+                </li>
+            </ol>
+            <p class="mt-4 italic text-white">
+                Este o invitație la curajul de a te opri — și de a te privi pe tine însuți în acțiune.
+            </p>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 6 — Testimoniale -->
+        <section id="testimoniale"
+                 class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl lg:text-4xl font-semibold text-accent
+                       px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
+                Ce spun participanții
+            </h2>
+            <div class="mt-4 grid gap-6 md:grid-cols-3 text-sm sm:text-base">
+                <figure class="border border-accent/30 rounded-xl p-4 bg-white/5 h-full flex flex-col justify-between">
+                    <blockquote class="italic text-white">
+                        "Supervizarea mi-a schimbat felul în care conduc echipa. Nu mai reacționez, ci răspund."
+                    </blockquote>
+                    <figcaption class="mt-3 text-xs text-accent">
+                        — M., Director operațional
+                    </figcaption>
+                </figure>
+                <figure class="border border-accent/30 rounded-xl p-4 bg-white/5 h-full flex flex-col justify-between">
+                    <blockquote class="italic text-white">
+                        "Nu am primit soluții. Am creat împreună o hartă pe care merg sigur."
+                    </blockquote>
+                    <figcaption class="mt-3 text-xs text-accent">
+                        — L., Antreprenor
+                    </figcaption>
+                </figure>
+                <figure class="border border-accent/30 rounded-xl p-4 bg-white/5 h-full flex flex-col justify-between">
+                    <blockquote class="italic text-white">
+                        "Procesul este profund, dar practic. Mi-a adus claritate în decizii și energie în relații."
+                    </blockquote>
+                    <figcaption class="mt-3 text-xs text-accent">
+                        — R., Manager HR
+                    </figcaption>
+                </figure>
+            </div>
+            </div>
+        </section>
+
+        <!-- SECȚIUNEA 7 — Formular -->
+        <section id="formular"
+                 class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
+            <div class="section-inner">
+            <h2 class="text-2xl lg:text-4xl font-semibold text-accent
+                       px-10 py-4 rounded-2xl text-center mx-auto w-fit tracking-tight uppercase">
+                Programează o sesiune exploratorie gratuită
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-white text-center max-w-2xl mx-auto">
+                Completează formularul de mai jos, iar eu voi reveni cu un răspuns pentru a stabili împreună ziua și ora potrivită pentru tine.
+            </p>
+
+            <form class="mt-8 max-w-xl mx-auto space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-accent uppercase tracking-[0.16em] mb-1">
+                        Nume
+                    </label>
+                    <input type="text"
+                           class="w-full px-3 py-2 rounded-lg border border-accent/30 bg-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-accent placeholder-white/50"
+                           placeholder="Numele tău">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-accent uppercase tracking-[0.16em] mb-1">
+                        Prenume
+                    </label>
+                    <input type="text"
+                           class="w-full px-3 py-2 rounded-lg border border-accent/30 bg-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-accent placeholder-white/50"
+                           placeholder="Prenumele tău">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-accent uppercase tracking-[0.16em] mb-1">
+                        Email
+                    </label>
+                    <input type="email"
+                           class="w-full px-3 py-2 rounded-lg border border-accent/30 bg-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-accent placeholder-white/50"
+                           placeholder="exemplu@domeniu.com">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-accent uppercase tracking-[0.16em] mb-1">
+                        Mesaj (opțional)
+                    </label>
+                    <textarea rows="4"
+                              class="w-full px-3 py-2 rounded-lg border border-accent/30 bg-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-accent placeholder-white/50"
+                              placeholder="Spune-mi pe scurt contextul tău profesional."></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full sm:w-auto px-6 py-3 rounded-full text-sm font-semibold bg-accent text-white hover:bg-white hover:text-primary transition flex items-center justify-center mx-auto">
+                    Trimite solicitarea
+                </button>
+
+                <p class="mt-3 text-[0.7rem] text-white/70 text-center">
+                    Prin trimiterea formularului îți exprimi acordul pentru a fi contactat(ă) în scopul programării unei sesiuni de supervizare managerială.
+                </p>
+            </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-200 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-[0.7rem] sm:text-xs text-gray-500 flex flex-col sm:flex-row justify-between gap-2">
+            <span>© 2025 Supervizare Managerială. Toate drepturile rezervate.</span>
+        </div>
+    </footer>
+
+    <script> //JavaScript pentru meniul mobil
+        const mobileToggle = document.getElementById('mobile-menu-toggle'); 
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileIcon = document.getElementById('mobile-menu-icon');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');   // arată / ascunde meniul
+            mobileIcon.classList.toggle('rotate-180');     // întoarce săgeata
+        });
+    </script>
+
+</body>
+</html>
+    
