@@ -1,4 +1,14 @@
 <section class="relative overflow-hidden text-white panel-section pb-24 lg:pb-32 px-4 sm:px-6 lg:px-8">
+
+  <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-[-20%] left-[-10%] w-[600px] h-[600px]
+                    bg-accent/20 blur-[150px] rounded-full"></div>
+
+        <div class="absolute bottom-[-20%] right-[-5%] w-[500px] h-[500px]
+                    bg-blue-500/5 blur-[180px] rounded-full"></div>
+
+        <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div> -->
+    </div>
     <div class="section-inner pt-5 lg:pt-8 min-h-[80vh] flex flex-col">
 
         <!-- NAV SUS -->
@@ -38,9 +48,17 @@
 
                 <!-- LINK FACEBOOK -->
                 <a href="https://www.facebook.com/profile.php?id=61569330804221"
-                   target="_blank" rel="noopener"
-                   class="text-white/80 hover:text-accent">
-                    Facebook
+                    target="_blank" rel="noopener"
+                    aria-label="Profil Facebook"
+                    class="w-9 h-9 flex items-center justify-center rounded-full
+                            border border-accent/60 text-accent
+                            hover:bg-accent hover:text-primary
+                            transition">
+                    <!-- Icon Facebook (SVG) -->
+                    <svg viewBox="0 0 24 24"
+                        class="w-4 h-4" fill="currentColor">
+                        <path d="M13.5 22v-7h2.5a1 1 0 0 0 .99-.86l.38-3a1 1 0 0 0-.99-1.14H13.5V7.5A1.5 1.5 0 0 1 15 6h1.5a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1H15a4.5 4.5 0 0 0-4.5 4.5v2.5H8.5a1 1 0 0 0-1 .86l-.38 3A1 1 0 0 0 8.5 15h2V22Z"/>
+                    </svg>
                 </a>
 
                 <a href="tel:069459962"
@@ -138,11 +156,39 @@
             </div>
 
             <!-- DREAPTA – CARD IMAGINE -->
-            <div class="w-full max-w-[360px] h-auto rounded-3xl bg-white/5 border border-white/10
-                        backdrop-blur-md overflow-hidden mx-auto">
-                <img src="./Images/img1.jpg"
-                     alt="Portret / ilustrație supervizare"
-                     class="w-full h-auto object-cover rounded-3xl">
+           <div class="relative w-full max-w-[420px] mx-auto group">
+
+                <!-- GLOW DIN SPATE LA HOVER -->
+                <div class="absolute -inset-2 rounded-[32px]
+                            bg-gradient-to-tr from-accent/40 via-transparent to-accent/40
+                            opacity-0 blur-xl transition
+                            group-hover:opacity-100"></div>
+
+                <!-- CARD IMAGINE -->
+                <div class="relative rounded-[32px] overflow-hidden
+                            backdrop-blur-xl
+                            shadow-[0_25px_80px_rgba(0,0,0,0.85)]
+                            transform transition
+                            group-hover:-translate-y-1 group-hover:scale-[1.02] group-hover:rotate-1">
+
+                    <div class="relative w-full max-w-[320px] mx-auto
+                                bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden
+                                rounded rounded-tl-none rounded-bl-none">
+
+                        <img src="./Images/img1.jpg"
+                            alt="Portret"
+                            class="w-full h-auto object-cover rounded-none">
+                    </div>
+
+                    
+                    <!-- BADGE MIC PE IMAGINE -->
+                    <div class="absolute bottom-4 right-4
+                                px-3 py-1.5 rounded-full bg-black/70
+                                text-[11px] text-white/80 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Disponibil pentru sesiuni online
+                    </div>
+                </div>
             </div>
 
         </div>

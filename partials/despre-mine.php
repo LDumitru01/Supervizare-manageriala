@@ -1,15 +1,18 @@
 <!-- SECȚIUNE DESPRE MINE -->
 <section id="despre-mine" class="panel-section py-16 lg:py-24">
+    <div class="pointer-events-none absolute -top-10 left-0 right-0 h-10
+                bg-gradient-to-b from-transparent to-[#020617]"></div>
+    
     <div class="section-inner px-4 sm:px-6 lg:px-8 space-y-10">
 
         <!-- TITLU + BADGE -->
         <div class="text-center space-y-4">
-            <div class="inline-flex items-center px-4 py-2 rounded-full
+            <!-- <div class="inline-flex items-center px-4 py-2 rounded-full
                         bg-accent/10 border border-accent/40
                         text-xs sm:text-sm font-semibold tracking-[0.18em]
                         uppercase text-accent">
                 Despre supervizor
-            </div>
+            </div> -->
 
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight
                        text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)]">
@@ -106,7 +109,7 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="mt-8 rounded-2xl border border-white/10 bg-white/5
+                <div class="sm:mt-8 rounded-2xl border border-white/10 bg-white/5
                             p-4 sm:p-5 backdrop-blur-xl
                             hover:bg-white/10 hover:-translate-y-1
                             hover:shadow-[0_18px_45px_rgba(0,0,0,0.35)]
@@ -124,7 +127,7 @@
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="mt-8 rounded-2xl border border-white/10 bg-white/5
+                <div class="sm:mt-8 rounded-2xl border border-white/10 bg-white/5
                             p-4 sm:p-5 backdrop-blur-xl
                             hover:bg-white/10 hover:-translate-y-1
                             hover:shadow-[0_18px_45px_rgba(0,0,0,0.35)]
