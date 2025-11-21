@@ -5,16 +5,16 @@
         <div class="section-inner">
 
             <!-- BADGE SUS -->
-            <div class="flex justify-center">
+            <!-- <div class="flex justify-center">
                 <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                              bg-accent/10 border border-accent/30 text-xs font-semibold
                              tracking-[0.2em] uppercase text-accent">
                     Pentru manageri și lideri
                 </span>
-            </div>
+            </div> -->
 
             <!-- TITLU -->
-            <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+            <h2 class="mt-4 mb-12 text-center text-accent font-extrabold tracking-tight 
                         text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
                 De ce pentru manageri și lideri
             </h2>
@@ -58,7 +58,8 @@
                 <!-- DREAPTA: CITAT EVIDENȚIAT -->
                 <div class="relative">
                     <div class="rounded-3xl border border-accent/40 bg-accent/5 px-6 py-6 sm:px-8 sm:py-8
-                                text-sm sm:text-base text-white/90 italic shadow-lg">
+                                text-sm sm:text-base text-white/90 italic shadow-lg hover:shadow-[0_0_40px_rgba(34,197,172,0.15)]
+                                transition">
                         <p>
                             Nu ai nevoie de cineva care să-ți spună ce să faci.
                             <br />

@@ -30,7 +30,7 @@
                             class="w-full rounded-xl bg-black/30 border border-white/15 px-4 py-3 text-sm sm:text-base text-white placeholder-white/35
                                    focus:outline-none focus:ring-2 focus:ring-accent/70 focus:border-accent/70 transition"
                             required
-                        />
+                        /> 
                     </div>
 
                     <div class="space-y-1.5">

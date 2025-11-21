@@ -11,7 +11,7 @@
 
             <!-- NAV DESKTOP -->
             <nav
-                class="hidden md:flex items-center gap-8 text-sm
+                class="hidden md:flex items-center gap-10 text-sm
                        px-6 py-2.5 rounded-2xl
                        bg-white/5 border border-white/10 backdrop-blur-xl
                        shadow-lg hover:shadow-[0_0_40px_rgba(34,197,172,0.15)]
@@ -101,7 +101,9 @@
 
                 <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug
                            text-white max-w-xl">
-                    Dezvoltă-ți excelența profesională prin supervizare — un proces
+                    Dezvoltă-ți 
+                    <span class="text-accent font-bold">excelența profesională</span>
+                    prin supervizare — un proces
                     reflexiv care clarifică direcția și întărește leadershipul.
                 </h1>
 
@@ -128,7 +130,7 @@
             <div class="w-full h-[300px] lg:h-[360px] rounded-3xl bg-white/5 border border-white/10
                         backdrop-blur-md flex items-center justify-center
                         text-gray-400 text-sm italic">
-                Aici vei adăuga imaginea ta (portret / ilustrație).
+                [Imagine reprezentativă sau ilustrație aici]
             </div>
 
         </div>

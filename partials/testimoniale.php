@@ -2,7 +2,7 @@
          class="panel-section shadow-xl backdrop-blur-xl p-6 sm:p-8 md:p-10 lg:p-12 min-h-[60vh] scroll-mt-32">
     <div class="section-inner">
 
-        <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+        <h2 class="mt-4 mb-12 text-center text-accent font-extrabold tracking-tight 
            text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
             Ce spun participanții
         </h2>

@@ -2,16 +2,16 @@
     <div class="section-inner">
 
         <!-- BADGE MIC -->
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
             <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                         bg-accent/10 border border-accent/30 text-xs font-semibold
                         tracking-[0.2em] uppercase text-accent">
                 De ce acum
             </span>
-        </div>
+        </div> -->
 
         <!-- TITLU -->
-        <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+        <h2 class="mt-4 mb-12 text-center text-accent font-extrabold tracking-tight 
            text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
             De ce supervizare acum
         </h2>
@@ -30,7 +30,7 @@
 
                 <div class="w-11 h-11 flex items-center justify-center
                             rounded-2xl bg-accent/20 text-accent text-2xl">
-                    ★
+                    ✧
                 </div>
 
                 <div class="space-y-2">

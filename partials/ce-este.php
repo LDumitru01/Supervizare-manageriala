@@ -5,16 +5,16 @@
         <div class="section-inner">
 
             <!-- BADGE SUS -->
-            <div class="flex justify-center">
+            <!-- <div class="flex justify-center">
                 <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                              bg-accent/10 border border-accent/30 text-xs font-semibold
                              tracking-[0.2em] uppercase text-accent">
                     Ce este supervizarea integrativă
                 </span>
-            </div>
+            </div> -->
 
             <!-- TITLU -->
-            <h2 class="mb-8 text-center text-accent font-extrabold tracking-tight 
+            <h2 class="mt-4 mb-12 text-center text-accent font-extrabold tracking-tight 
                         text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)]">
                 Ce este supervizarea integrativă
             </h2>
