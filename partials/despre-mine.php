@@ -16,7 +16,7 @@
 
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight
                        text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)]">
-                Grigore Barlădean
+                Grigore BARLADEAN
             </h2>
 
             <p class="text-sm sm:text-base text-white/70 max-w-2xl mx-auto">

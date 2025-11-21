@@ -173,7 +173,7 @@
 
                     <div class="relative w-full max-w-[320px] mx-auto
                                 bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden
-                                rounded rounded-tl-none rounded-bl-none">
+                                rounded-tr-3xl rounded rounded-tl-none rounded-bl-none">
 
                         <img src="./Images/img1.jpg"
                             alt="Portret"

@@ -2,8 +2,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7Q58E2C93"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E7Q58E2C93');
+    </script>
+
     <!-- TITLU SEO -->
-    <title>Supervizare Managerială — Dezvoltare Profesională și Claritate în Leadership</title>
+    <title>Supervizare Managerială - Grigore BARLADEAN</title>
 
     <!-- META DESCRIPTION SEO -->
     <meta name="description" 
@@ -23,7 +33,7 @@
     <meta property="og:title" content="Supervizare Managerială — Crește-ți excelența profesională">
     <meta property="og:description" content="Proces reflexiv profesional pentru claritate, direcție și leadership puternic.">
     <meta property="og:image" content="./Images/og-image.png">
-    <meta property="og:url" content="https://supervizare-manageriala.md">
+    <meta property="og:url" content="https://integraexpert.md">
     <meta property="og:type" content="website">
 
     <!-- TWITTER CARD (X) -->
