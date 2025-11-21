@@ -1,7 +1,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Supervizare Managerială</title>
+
+    <!-- TITLU SEO -->
+    <title>Supervizare Managerială — Dezvoltare Profesională și Claritate în Leadership</title>
+
+    <!-- META DESCRIPTION SEO -->
+    <meta name="description" 
+          content="Supervizare managerială pentru profesioniști și manageri. Obține claritate, maturitate profesională și un spațiu sigur de reflexie ghidată.">
+
+    <!-- KEYWORDS SEO -->
+    <meta name="keywords" 
+          content="supervizare managerială, dezvoltare profesională, leadership, coaching, management, reflexie profesională, claritate decizională">
+
+    <!-- AUTHOR -->
+    <meta name="author" content="Grigore Barladean">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./Images/favicon.png" />
+
+    <!-- OPEN GRAPH (FACEBOOK / LINKEDIN PREVIEW) -->
+    <meta property="og:title" content="Supervizare Managerială — Crește-ți excelența profesională">
+    <meta property="og:description" content="Proces reflexiv profesional pentru claritate, direcție și leadership puternic.">
+    <meta property="og:image" content="./Images/og-image.png">
+    <meta property="og:url" content="https://supervizare-manageriala.md">
+    <meta property="og:type" content="website">
+
+    <!-- TWITTER CARD (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Supervizare Managerială — Claritate și profesionalism">
+    <meta name="twitter:description" content="Supervizare profesională pentru manageri și specialiști.">
+    <meta name="twitter:image" content="./Images/og-image.png">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>

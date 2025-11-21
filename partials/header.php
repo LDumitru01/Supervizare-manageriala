@@ -1,13 +1,8 @@
-<section class="relative overflow-hidden text-white panel-section pb-24 lg:pb-32">
+<section class="relative overflow-hidden text-white panel-section pb-24 lg:pb-32 px-4 sm:px-6 lg:px-8">
     <div class="section-inner pt-5 lg:pt-8 min-h-[80vh] flex flex-col">
 
         <!-- NAV SUS -->
         <header class="w-full flex items-center justify-between gap-6">
-
-            <!-- STÂNGA – logo text (deocamdată gol) -->
-            <div class="flex items-center gap-2">
-                <!-- Poți pune logo aici -->
-            </div>
 
             <!-- NAV DESKTOP -->
             <nav
@@ -34,12 +29,20 @@
                 </a>
             </nav>
 
-            <!-- CONTACT DESKTOP -->
+            <!-- CONTACT DESKTOP (email + Facebook + telefon) -->
             <div class="hidden sm:flex items-center gap-4 text-sm">
                 <a href="mailto:grigore.barladean@gmail.com"
                    class="text-white/80 hover:text-accent">
                     grigore.barladean@gmail.com
                 </a>
+
+                <!-- LINK FACEBOOK -->
+                <a href="https://www.facebook.com/profile.php?id=61569330804221"
+                   target="_blank" rel="noopener"
+                   class="text-white/80 hover:text-accent">
+                    Facebook
+                </a>
+
                 <a href="tel:069459962"
                    class="px-4 py-2 rounded-full border border-accent text-accent
                           hover:bg-accent hover:text-primary transition
@@ -76,6 +79,11 @@
                    class="text-white/80 hover:text-accent">
                     grigore.barladean@gmail.com
                 </a>
+                <a href="https://www.facebook.com/profile.php?id=61569330804221"
+                   target="_blank" rel="noopener"
+                   class="text-white/80 hover:text-accent">
+                    Facebook
+                </a>
                 <a href="tel:069459962"
                    class="inline-flex items-center justify-center px-4 py-2
                           rounded-full border border-accent text-accent
@@ -92,17 +100,20 @@
             <!-- STÂNGA -->
             <div class="space-y-8">
 
-                <div class="inline-flex items-center px-6 py-3 rounded-full 
-                            bg-accent/15 border border-accent/30 
-                            text-accent font-extrabold text-3xl sm:text-4xl
-                            tracking-wide shadow-md">
+                <div class="inline-flex justify-center items-center
+                    px-6 py-3 rounded-full 
+                    bg-accent/15 border border-accent/30 
+                    text-accent font-extrabold text-3xl sm:text-4xl
+                    tracking-wide shadow-md text-center mx-auto">
                     Supervizare Managerială
                 </div>
 
                 <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug
                            text-white max-w-xl">
-                    Dezvoltă-ți 
-                    <span class="text-accent font-bold">excelența profesională</span>
+                    Dezvoltă-ți
+                    <span class="text-accent font-bold">
+                        excelența profesională
+                    </span>
                     prin supervizare — un proces
                     reflexiv care clarifică direcția și întărește leadershipul.
                 </h1>
@@ -126,11 +137,12 @@
                 </div>
             </div>
 
-            <!-- DREAPTA -->
-            <div class="w-full h-[300px] lg:h-[360px] rounded-3xl bg-white/5 border border-white/10
-                        backdrop-blur-md flex items-center justify-center
-                        text-gray-400 text-sm italic">
-                [Imagine reprezentativă sau ilustrație aici]
+            <!-- DREAPTA – CARD IMAGINE -->
+            <div class="w-full max-w-[360px] h-auto rounded-3xl bg-white/5 border border-white/10
+                        backdrop-blur-md overflow-hidden mx-auto">
+                <img src="./Images/img1.jpg"
+                     alt="Portret / ilustrație supervizare"
+                     class="w-full h-auto object-cover rounded-3xl">
             </div>
 
         </div>

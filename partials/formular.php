@@ -1,13 +1,13 @@
 <!-- SECȚIUNE FORMULAR -->
-<section id="formular" class="section-inner">
+<section id="formular" class="panel-section py-20 px-4 sm:px-6 lg:px-8">
     <div class="section-inner">
 
         <!-- TITLU + SUBTITLU -->
-        <h2 class=" text-center text-accent font-extrabold tracking-tight 
+        <h2 class="text-center text-accent font-extrabold tracking-tight 
            text-4xl sm:text-5xl lg:text-6xl drop-shadow-[0_4px_20px_rgba(34,197,172,0.25)] uppercase">
             Programează o sesiune exploratorie gratuită
         </h2>
-        <p class="mt-4 text-center text-sm sm:text-base text-white/80 max-w-2xl mx-auto">
+        <p class="section-inner mt-4 text-center text-sm sm:text-base text-white/80 max-w-2xl mx-auto">
             Completează formularul de mai jos, iar eu voi reveni cu un răspuns pentru a stabili împreună
             ziua și ora potrivită pentru tine.
         </p>

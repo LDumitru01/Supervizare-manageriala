@@ -6,6 +6,8 @@
 
     <?php include __DIR__ . '/partials/header.php'; ?>
 
+    <?php include __DIR__ . '/partials/despre-mine.php'; ?>
+
     <?php include __DIR__ . '/partials/investitie.php'; ?>
 
     <main class="relative z-10">
@@ -16,6 +18,7 @@
         <?php include __DIR__ . '/partials/cum-te-convingi.php'; ?>
         <?php include __DIR__ . '/partials/testimoniale.php'; ?>
         <?php include __DIR__ . '/partials/formular.php'; ?>
+        
     </main>
 
     <?php include __DIR__ . '/partials/footer.php'; ?>
