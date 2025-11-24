@@ -14,7 +14,7 @@
 
         <!-- CARD FORMULAR -->
         <div class="mt-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl p-6 sm:p-8 lg:p-10">
-            <form action="#" method="POST" class="space-y-6">
+            <form id="contactForm" class="space-y-6">
 
                 <!-- NUME + PRENUME -->
                 <div class="grid gap-6 md:grid-cols-2">
@@ -104,6 +104,8 @@
                                shadow-lg shadow-accent/30 hover:bg-teal-400 transition flex items-center justify-center gap-2 mx-auto">
                         Trimite solicitarea
                     </button>
+
+                    <div id="responseMessage" class="text-center text-sm mt-4"></div>
 
                     <p class="text-[11px] sm:text-xs text-center text-white/50 max-w-lg mx-auto">
                         Prin trimiterea formularului îți exprimi acordul pentru a fi contactat(ă) în scopul programării unei sesiuni

@@ -37,5 +37,44 @@
         }
     </script>
 
+    <script>
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const responseBox = document.getElementById("responseMessage");
+
+    responseBox.textContent = "";
+    responseBox.className = "text-center text-sm mt-4";
+
+    try {
+        const res = await fetch("contact-form.php", { // ← aici
+            method: "POST",
+            body: formData
+        });
+
+        const data = await res.text();
+        console.log("STATUS:", res.status);
+        console.log("RESPONSE:", data);
+
+        if (data.includes("success")) {
+            responseBox.textContent = "✔ Mesaj trimis cu succes! Te voi contacta în scurt timp.";
+            responseBox.classList.add("text-green-400", "font-semibold");
+            form.reset();
+        } else {
+            responseBox.textContent = "⚠ A apărut o eroare. Te rog încearcă din nou.";
+            responseBox.classList.add("text-red-400", "font-semibold");
+        }
+    } catch (error) {
+        console.error("Eroare fetch:", error);
+        responseBox.textContent = "❌ Eroare de conexiune. Reîncearcă.";
+        responseBox.classList.add("text-red-400");
+    }
+});
+</script>
+
+
+
 </body>
 </html>
