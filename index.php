@@ -18,6 +18,7 @@
         <?php include __DIR__ . '/partials/cum-te-convingi.php'; ?>
         <?php include __DIR__ . '/partials/testimoniale.php'; ?>
         <?php include __DIR__ . '/partials/formular.php'; ?>
+        <?php include __DIR__ . '/partials/blog.php'; ?>
         
     </main>
 

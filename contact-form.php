@@ -1,8 +1,12 @@
 <?php
 
+require_once __DIR__ . '/config/database.php'; // ← conectare la DB
+
+
+
 // 1. TOKEN + CHAT_ID – pune valorile tale reale
 $telegramBotToken = "8477278946:AAEltqDkqTMm2TuN-44Sjk5kfndowvySvfI"; // ← token de la BotFather
-$telegramChatId   = "719332615";                                      // ← chat.id din getUpdates
+$telegramChatId   = "-5009419859";                                     // ← chat.id din getUpdates
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -20,6 +24,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "error_validation";
         exit;
     }
+
+    $stmt = $mysqli->prepare("
+        INSERT INTO contact_form_requests (first_name, last_name, email, phone, message)
+        VALUES (?, ?, ?, ?, ?)
+    ");
+
+    if (!$stmt) {
+        error_log('Prepare failed: ' . $mysqli->error);
+        echo 'db_error';
+        exit;
+    }
+
+    $stmt->bind_param("sssss", $firstName, $lastName, $email, $phone, $messageText);
+
+    if (!$stmt->execute()) {
+        error_log('Execute failed: ' . $stmt->error);
+        echo 'db_error';
+        $stmt->close();
+        exit;
+    }
+
+    $stmt->close();
 
     // 4. Textul care ajunge în Telegram
     $text  = "📩 <b>Mesaj nou de pe site</b>\n\n";
